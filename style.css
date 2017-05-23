@@ -1,44 +1,104 @@
-* {
-
+body {
+  color: white;
   font-family: Georgia;
-  background-color: #f9d689;
+  background-color: black;
 }
 
 h3 {
-color: #752001;
+
 }
 
- #tags {
+#tags {
 	font-family: "Times New Roman", serif;
 }
 
-#titulo {
+h1 {
 	padding: 20px;
 	text-align: center;
 }
 
-#wrapper {
-	
+.wrapper {
 	max-width: 500px;
 	margin: 0 auto;
 }
 
-.photo {
+.skillsWrap {
+	font-size: 20px;
+	color: lightgrey;
+	max-width: 500px;
+	padding: 50px;
 	margin: 0 auto;
-	width: 35%;
-	/*padding: 20px;*/
+	border: 1px solid bisque;
+	border-radius: 5%;
+}
+
+.skillsWrap h1 {
+	color: white;
+}
+
+.skillsWrap h2 {
+	color: lightblue;
+}
+
+.skillsWrap h3 {
+	color: bisque;
+}
+
+.warning {
+	color: red;
+	font-size: 1em;
+	font-family: "Courier New", serif;
+}
+
+.photo {
+	padding-top: 50px;
+	margin: 0 auto;
+	width: 170px;
 	display: block;
 }
 
+a {
+	text-decoration: none;
+    padding: 2px 1px 0;
+
+}
+
+
+a:link {
+	color: white;
+
+}
+
+a:visited {
+	color: white;
+
+}
+
+a:focus {
+	border-bottom: 1px solid;  /*no color specified. Border adopts the same color as the element's text, */ 
+	background: orange;
+}
+
+a:hover {
+	color: black;
+	border-bottome: 1px solid;
+	background: orange;
+
+}
+
+a:active {
+	color: red;
+	background: black;
+
+}
+
 .social{
-	/* height: 35px;
-	width: 200px; */
-	
-	padding: 20px;
-	margin: 0;
+	background: orange;
+	padding: 10px;
+	max-width: 150px;
+	margin: 0 auto;
 	text-align: center;
 	display: block;
-	/*float: left;*/
 	}
 	
 .social ul {
@@ -60,7 +120,6 @@ color: #752001;
 
 ul {
 	list-style-type: none;
-
 }
 
 .logo {
@@ -70,12 +129,12 @@ ul {
 }
 
 .list {
-	/*background-color: gray;*/
-	padding: 0;
-	margin: 0;
+	max-width: 170px;
+	border: 1px solid orange;
+	padding: 20px 0 50px 0;
+	margin: 50px auto 0 auto;
 	text-align: center;
-	
-	display: block;
+	/*display: block;*/
 }
 
 .list ul {
@@ -91,9 +150,9 @@ ul {
 
 .list a {
 	text-decoration: none;
-	color: #752001;
 	font-family: Candara;
-	/*display: block;*/
-	/*display: block;*/
-	/*background-color: #dddddd;*/
+}
+
+@ media (min-width: 600px) {
+	/*remove top and bottom padding, add it only for non-portable-size screens*/
 }
