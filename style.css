@@ -25,6 +25,7 @@ h1 {
 .skillsWrap {
 	font-size: 20px;
 	color: lightgrey;
+	background-color: darkslategrey;
 	max-width: 500px;
 	padding: 50px;
 	margin: 0 auto;
@@ -45,7 +46,7 @@ h1 {
 }
 
 .warning {
-	color: red;
+	color: darksalmon;
 	font-size: 1em;
 	font-family: "Courier New", serif;
 }
@@ -59,7 +60,7 @@ h1 {
 
 a {
 	text-decoration: none;
-    padding: 2px 1px 0;
+        padding: 2px 1px 0;
 
 }
 
