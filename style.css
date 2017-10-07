@@ -1,69 +1,72 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+
 body {
-  color: white;
-  font-family: Georgia;
-  background-color: black;
+	font-size: 16px;
+	color: white;
+	font-family: Georgia, sans-serif;;
+	background-color: black;
 }
 
-h3 {
-
-}
-
-#tags {
-	font-family: "Times New Roman", serif;
-}
-
-h1 {
+header {
+	margin: 0 auto;
+	font-size: 2em;
 	padding: 20px;
 	text-align: center;
 }
 
-.wrapper {
-	max-width: 500px;
-	margin: 0 auto;
-}
 
-.skillsWrap {
-	font-size: 20px;
-	color: lightgrey;
-	background-color: darkslategrey;
-	max-width: 500px;
-	padding: 50px;
-	margin: 0 auto;
-	border: 1px solid bisque;
-	border-radius: 5%;
-}
-
-.skillsWrap h1 {
-	color: white;
-}
-
-.skillsWrap h2 {
-	color: lightblue;
-}
-
-.skillsWrap h3 {
-	color: bisque;
-}
-
-.warning {
-	color: darksalmon;
-	font-size: 1em;
-	font-family: "Courier New", serif;
+#home {
+	text-align: center;
 }
 
 .photo {
 	padding-top: 50px;
 	margin: 0 auto;
 	width: 170px;
-	display: block;
+}
+
+.aside {
+	border: solid 5px black;
+	background-color: whitesmoke;
+}
+
+#aboutme {
+	font-size: 1.3em;
+	padding: 20px; /*padding is making container bigger, box-sizing: border box does not fix it (??)*/
+	color: black;
+}
+
+#portfolio {
+	padding: 20px; /*just to counterbalance aboutme's overgrowth*/
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.project {
+	box-sizing: border-box;
+	padding: 1vw;
+	width: 45%;
+	background-color: rgb(216, 213, 205);
+	margin: 5px;
+}
+
+.project img {
+	width: 100%;
+}
+
+.project div{
+	color: black;
 }
 
 a {
 	text-decoration: none;
-        padding: 2px 1px 0;
-
+    padding: 2px 1px 0;
 }
-
 
 a:link {
 	color: white;
@@ -104,7 +107,6 @@ a:active {
 	
 .social ul {
 	list-style-type: none;
-	height: auto;
 	padding: 0;
 	margin: 0;
 }
@@ -121,6 +123,8 @@ a:active {
 
 ul {
 	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }
 
 .logo {
@@ -129,7 +133,7 @@ ul {
 	height: auto;
 }
 
-.list {
+#links {
 	max-width: 170px;
 	border: 1px solid orange;
 	padding: 20px 0 50px 0;
@@ -138,22 +142,62 @@ ul {
 	/*display: block;*/
 }
 
-.list ul {
+#links ul {
 	list-style-type: none;
 	margin:0;
 	padding:0;
 	line-height: 50px;
 }
 
-.list li {
+#links li {
 	font-size: 1.5em;
 }
 
-.list a {
+#links a {
 	text-decoration: none;
 	font-family: Candara;
 }
 
-@ media (min-width: 600px) {
-	/*remove top and bottom padding, add it only for non-portable-size screens*/
+span {
+	color: darkred;
+}
+
+
+@media (max-width: 899px) {
+	article {
+		min-height: 100vh;
+	}
+}
+
+
+@media (min-width: 900px) {
+	main {
+		display: flex;
+	}
+
+	article {
+		flex: 1;
+	}
+
+	#home {
+		order: 2;
+		flex: 0.5;
+	}
+
+	#aboutme {
+		order: 1;
+	}
+
+	#portfolio {
+		order:3;
+		max-height: 80vh;
+	}
+
+
+	.isHidden { /* class to make articles (in)visible */
+		visibility: hidden;
+	}
+	.isVisible {        
+	visibility: visible;
+	}
 }

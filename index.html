@@ -1,57 +1,120 @@
 <!DOCTYPE html>
-
-  <html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-	  <meta charset="utf-8">
-	  <link rel="stylesheet" href="style.css"> 
-	  <title>Alaminos Home</title>
-	  
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Alaminos</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet"> 
     </head>
 
     <body>
-	  
-	  
-	  <div id="wrapper">
-	    <h1 id="titulo">Antonio Alaminos</h1>
-		<br>
-	    
-		
-		<nav class="social">
-		  <ul>
-		    <li>
-			  <a href="https://antidisciplinar.wordpress.com/"> 
-		        <img class="logo" src="WPLogo.png" alt="Twitter"> 
-		      </a>
-			</li>
-			
-			<li>
-			  <a href="https://github.com/alaminos"> 
-		        <img class="logo" src="https://image.flaticon.com/icons/png/128/3/3641.png" alt="Github"> 
-		      </a>
-			</li>
-			
-			<li>
-			  <a href="https://www.instagram.com/anto.alam/"> 
-		        <img class="logo" src="http://akaafair.com/wp-content/uploads/Instagram-300x300.png" alt="Instagram"> 
-		      </a>
-			</li>
-		
-		  </ul>
-		</nav>
-		
-		<br>
-		<img src="https://pbs.twimg.com/profile_images/686201854573809665/ppNqaBxu_400x400.jpg" 
-		     class="photo" 
-		     alt="photo of Antonio">
-		<br>
-		
-		<nav class="list">
-		  <ul>
-		    <li><a href="skills.html">CV</a></li>
-		    <li><a href="https://antidisciplinar.wordpress.com/2017/09/08/proyectos/">Projects</a></li>
-		  </ul>
-		</nav>
-	  </div>
-      
+        <header>Antonio Alaminos</header>
+        <main>
+            
+            <article id="home">
+                <nav class="social">
+                    <ul>
+                        <li>
+                            <a href="https://antidisciplinar.wordpress.com/"> 
+                                <img class="logo" src="WPLogo.png" alt="Twitter"></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/alaminos"> 
+                                <img class="logo" src="https://image.flaticon.com/icons/png/128/3/3641.png" alt="Github"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/anto.alam/"> 
+                                <img class="logo" src="http://akaafair.com/wp-content/uploads/Instagram-300x300.png" alt="Instagram"></a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <img src="https://pbs.twimg.com/profile_images/686201854573809665/ppNqaBxu_400x400.jpg" 
+                class="photo" 
+                alt="photo of Antonio">
+
+                <nav id="links">
+                        <ul>
+                          <li><a href="#aboutme" onclick="isVisible('aboutme')">CV</a></li>
+                          <li><a  onclick="isVisible('portfolio')">Projects</a></li>
+                        </ul>
+                      </nav>
+
+
+            </article>
+
+            <article id="aboutme" class="aside isHidden">
+                    <p id="hi">Hi, I'm Antonio, a curiosity-driven 
+                        professional with a multidisciplinary background.</p>
+    
+                    <p>My work experience is mainly in
+                                <strong>Customer Service</strong> 
+                                and <strong>Language Teaching</strong>.
+                            My will to build educational apps and 
+                            learning tools got me into programming. 
+                            Last April, after a period of dabbling with different 
+                            technologies and reflecting on my career, 
+                            I started teaching myself 
+                            <span>Web Development</span>. 
+                            I am loving it.</p>
+    
+                    <p>The main technologies I use are:
+                         <strong>HTML, CSS and JavaScript</strong>. 
+                         I am also familiar with image and audio editing 
+                         software that I have used for personal projects, 
+                         particularly: GIMP, Inkscape, Krita and Audacity.</p>
+    
+                    <p>I speak Spanish and English fluently. 
+                        My French gets better everyday.</p>
+    
+                    <p>I am looking for a position in IT, preferably in
+                         a team of highly motivated folks and in an 
+                         environment full of challenges and learning 
+                         opportunities.</p>
+
+            </article>
+            
+            <article id="portfolio" class="aside isHidden">
+                <section class="project"> <a target="_blank" 
+                    href="http://alaminos.github.io/perlimpinpin">
+                    <img src="perlimpinpin.png" 
+                    alt="a landing page"></a>
+                    <div>a product landing page</div>
+                </section>
+                <section class="project"> <a target="_blank" 
+                    href="http://alaminos.github.io/animal-guess-prototype">
+                    <img src="agame.png" alt=""></a>
+                    <div>a game prototype</div>
+                </section>
+                <section class="project"> <a target="_blank" 
+                    href="https://codepen.io/alaminos/full/NjwGZq/">
+                    <img src="tribute.png" alt=""></a>
+                    <div>a tribute page</div>
+                </section>
+                <section class="project"> <a target="_blank" 
+                    href="http://alaminos.github.io/techdocs">
+                    <img src="techdocs.png" alt=""></a>
+                    <div>technical documentation</div>
+                </section>
+                <section class="project"> <a target="_blank" 
+                    href="http://alaminos.github.io/survey-fcc">
+                    <img src="survey.png" alt=""></a>
+                    <div>a survey</div>
+                </section>
+                <section class="project"> <a target="_blank" 
+                    href="https://antidisciplinar.wordpress.com/2017/09/08/proyectos/">
+                    <img src="challenges.png" alt=""></a>
+                    <div>programming challenges</div>
+                </section>
+            </article>
+        </main>
+        
     </body>
-  </html>
+</html>
