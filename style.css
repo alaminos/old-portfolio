@@ -1,11 +1,14 @@
+* {
+	box-sizing: border-box;
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
 }
 
-
 body {
-	font-size: 16px;
+	font-size: medium;
 	color: white;
 	font-family: Georgia, sans-serif;;
 	background-color: black;
@@ -13,55 +16,71 @@ body {
 
 header {
 	margin: 0 auto;
-	font-size: 2em;
+	font-size: xx-large;
 	padding: 20px;
-	text-align: center;
-}
-
-
-#home {
-	text-align: center;
 }
 
 .photo {
 	padding-top: 50px;
 	margin: 0 auto;
-	width: 170px;
 }
 
-.aside {
-	border: solid 5px black;
-	background-color: whitesmoke;
+/* blocks of the central column */
+.photo, .social, #links { 
+	max-width: 170px;
+}
+header, #home, #links { 
+	text-align:center;
 }
 
-#aboutme {
-	font-size: 1.3em;
-	padding: 20px; /*padding is making container bigger, box-sizing: border box does not fix it (??)*/
-	color: black;
+
+.social {  /* nav element containing social media account links */
+	background: orange;
+	padding: 10px;
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+}
+.social li {
+	display: inline;
+	padding: 10px;
+}
+.social a {
+	text-decoration: none;
+}
+.logo {
+	width: 20px;
+	height: auto;
 }
 
-#portfolio {
-	padding: 20px; /*just to counterbalance aboutme's overgrowth*/
-
-	display: flex;
-	flex-wrap: wrap;
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }
 
-.project {
-	box-sizing: border-box;
-	padding: 1vw;
-	width: 45%;
-	background-color: rgb(216, 213, 205);
-	margin: 5px;
+
+#links { /* central block containing index menu*/
+	border: 1px solid orange;
+	padding: 20px 0 50px 0;
+	margin: 50px auto 0 auto;
 }
 
-.project img {
-	width: 100%;
+#links ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	line-height: 50px;
+}
+#links li {
+	font-size: 1.5em;
+}
+#links a {
+	text-decoration: none;
+	font-family: Candara;
 }
 
-.project div{
-	color: black;
-}
+
 
 a {
 	text-decoration: none;
@@ -91,80 +110,52 @@ a:hover {
 }
 
 a:active {
-	color: red;
+	color: rgb(247, 191, 8);
 	background: black;
 
 }
 
-.social{
-	background: orange;
-	padding: 10px;
-	max-width: 150px;
-	margin: 0 auto;
-	text-align: center;
-	display: block;
-	}
-	
-.social ul {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-}
-	
-.social li {
-	display: inline;
-	padding: 10px;
-}
-	
-.social a {
-	text-decoration: none;
-}
 
 
-ul {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
+.aside {
+	border: solid 5px black;
+	background-color: whitesmoke;
 }
 
-.logo {
-	display: inline;
-	width: 20px;
-	height: auto;
+#aboutme {
+	font-size: large;
+	padding: 20px; /*padding is making container bigger, box-sizing: border box does not fix it (??)*/
+	color: black;
 }
 
-#links {
-	max-width: 170px;
-	border: 1px solid orange;
-	padding: 20px 0 50px 0;
-	margin: 50px auto 0 auto;
-	text-align: center;
-	/*display: block;*/
+#portfolio {
+	padding: 20px; /*just to counterbalance aboutme's overgrowth*/
+
+	display: flex;
+	flex-wrap: wrap;
+
+	min-height: 500px;
 }
 
-#links ul {
-	list-style-type: none;
-	margin:0;
-	padding:0;
-	line-height: 50px;
+.project {
+	padding: 1vw;
+	width: 45%;
+	background-color: rgb(216, 213, 205);
+	margin: 5px;
 }
 
-#links li {
-	font-size: 1.5em;
+.project img {
+	width: 100%;
 }
 
-#links a {
-	text-decoration: none;
-	font-family: Candara;
+.project div{
+	color: black;
 }
 
-span {
-	color: darkred;
-}
 
 
 @media (max-width: 899px) {
-	article {
+	#home {
 		min-height: 100vh;
 	}
 }
@@ -190,7 +181,6 @@ span {
 
 	#portfolio {
 		order:3;
-		max-height: 80vh;
 	}
 
 
@@ -198,6 +188,6 @@ span {
 		visibility: hidden;
 	}
 	.isVisible {        
-	visibility: visible;
+		visibility: visible;
 	}
 }
