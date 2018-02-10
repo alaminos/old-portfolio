@@ -9,7 +9,7 @@ html, body {
 
 body {
 	font-size: medium;
-	color: white;
+	color: rgb(240, 234, 234);
 	font-family: Georgia, sans-serif;;
 	background-color: rgb(12, 8, 4);
 }
@@ -61,8 +61,8 @@ ul {
 
 
 #links { /* central block containing index menu*/
-	border: 1px solid #A3631B;
-	padding: 20px 0 50px 0;
+	border: 3px solid #A3631B;
+	padding: 21px 0 21px 0;
 	margin: 50px auto 0 auto;
 }
 
@@ -70,7 +70,7 @@ ul {
 	list-style-type: none;
 	margin:0;
 	padding:0;
-	line-height: 50px;
+	line-height: 42px;
 }
 #links li {
 	font-size: 1.5em;
