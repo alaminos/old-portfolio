@@ -1,122 +1,180 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-                <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112263103-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"></html><![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"></html><![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"></html><![endif]-->
+<!-- [if gt IE 8]><! -->
+<html class="no-js">
+  <!-- <![endif] -->
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-112263103-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-          gtag('config', 'UA-112263103-1');
-        </script>
+      gtag("config", "UA-112263103-1");
+    </script>
 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Alaminos</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet"> 
-    </head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Alaminos</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans"
+      rel="stylesheet"
+    />
+  </head>
 
-    <body>
-        <header>Antonio Alaminos</header>
-        <main>
-            
-            <article id="home">
-                <nav class="social">
-                    <ul>
-                        <li>
-                            <a href="https://antidisciplinar.wordpress.com/"> 
-                                <img class="logo" src="img/WPLogo.png" alt="Blog"></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/alaminos"> 
-                                <img class="logo" src="https://image.flaticon.com/icons/png/128/3/3641.png" alt="Github"></a>
-                        </li>
-                        <li>
-                            <a href="https://fr.linkedin.com/in/almns/fr"> 
-                                <img class="logo" src="img/linkedin.png" alt="LinkedIn"></a>
-                        </li>
-                    </ul>
-                </nav>
+  <body>
+    <header>Antonio Alaminos</header>
+    <main>
+      <article id="home">
+        <nav class="social">
+          <ul>
+            <li>
+              <a href="https://antidisciplinar.wordpress.com/">
+                <img class="logo" src="img/WPLogo.png" alt="Blog"
+              /></a>
+            </li>
+            <li>
+              <a href="https://github.com/alaminos">
+                <img
+                  class="logo"
+                  src="https://image.flaticon.com/icons/png/128/3/3641.png"
+                  alt="Github"
+              /></a>
+            </li>
+            <li>
+              <a href="https://fr.linkedin.com/in/almns/fr">
+                <img class="logo" src="img/linkedin.png" alt="LinkedIn"
+              /></a>
+            </li>
+          </ul>
+        </nav>
 
-                <img src="https://pbs.twimg.com/profile_images/686201854573809665/ppNqaBxu_400x400.jpg" 
-                class="photo" 
-                alt="photo of Antonio">
+        <img
+          src="https://pbs.twimg.com/profile_images/686201854573809665/ppNqaBxu_400x400.jpg"
+          class="photo"
+          alt="photo of Antonio"
+        />
 
-                <nav id="links">
-                    <ul>
-                        <li><a href="#aboutme" onclick="isVisible('aboutme')">About me</a></li>
-                        <li><a href="#portfolio" onclick="isVisible('portfolio')">Projects</a></li>
-                        <li><a href="">⌂</a></li>
-                    </ul>
-                </nav>
-            </article>
+        <nav id="links">
+          <ul>
+            <li>
+              <a href="#aboutme" onclick="isVisible('aboutme')">About me</a>
+            </li>
+            <li>
+              <a href="#portfolio" onclick="isVisible('portfolio')">Projects</a>
+            </li>
+            <li><a href="">⌂</a></li>
+          </ul>
+        </nav>
+      </article>
 
-            <article id="aboutme" class="aside isHidden">
-                <p>
-                    Hi, I'm Antonio.  
-                    I come from a background in Foreign Language Education and Customer Service, 
-                    and I am currently looking for a <strong>web development</strong> position.</p>
-                    
-                <p>It was a mix of curiosity, 
-                    a will to build learning tools, 
-                    thirst for knowledge and 
-                    a desire for new challenges that got me into programming more than a year ago. 
-                    My goal now is to find a supportive environment where I can keep on growing. 
-                    I invest most of my learning time into <strong>JavaScript</strong>, as it seems to be the unavoidable language; 
-                    I have built some humble little things with <strong>PHP</strong>; 
-                    and as I am intrigued by fields like NLP, data science and machine learning, I often dabble in <strong>Python</strong> as well.</p>
+      <article id="aboutme" class="aside isHidden" data-lang="en">
+        <p>
+          Hi, I'm Antonio. I come from a background in Foreign Language
+          Education and Customer Service, I decided to change my carrer and I am
+          now working (and studying) as a web developer, thanks to an education
+          programme called "alternance" (equivalent to "apprenticeships" in the
+          UK). That is, I work at a company side by side with experienced staff,
+          and about a week per month I assist classes.
+        </p>
 
-                <p>The project section in this page presents some of the things I am working on. 
-                    These are in no way finished up projects and I often come back to them to polish things a little.</p>
-                
-                <p>Besides code, I like all things creative. 
-                    When I am not at my desk, I am running, 
-                    recording sounds, drawing, reading and writing fiction.</p>
-    
-            </article>
-            
-            <article id="portfolio" class="aside isHidden">
-                <section class="project"> <a target="_blank" 
-                    href="http://alaminos.github.io/perlimpinpin">
-                    <img src="img/perlimpinpin.png" 
-                    alt="a landing page"></a>
-                    <div>a product landing page</div>
-                </section>
-                <section class="project"> <a target="_blank" 
-                    href="http://alaminos.github.io/animal-guess-prototype">
-                    <img src="img/agame.png" alt=""></a>
-                    <div>a game prototype</div>
-                </section>
-                <section class="project"> <a target="_blank" 
-                    href="https://alaminos.github.io/new-hex-converter/">
-                    <img src="img/hex.png" alt=""></a>
-                    <div>hexadecimal converter</div>
-                </section>
-                <section class="project"> <a target="_blank" 
-                    href="https://alaminos.github.io/todo-list/">
-                    <img src="img/todoapp.png" alt=""></a>
-                    <div>just another to-do app</div>
-                </section>
-                <section class="project"> <a target="_blank" 
-                    href="https://github.com/alaminos/watchasay">
-                    <img src="img/watchasay.png" alt=""></a>
-                    <div>a language learning app (in progress)</div>
-                </section>
-                <section class="project"> <a target="_blank" 
-                    href="https://antidisciplinar.wordpress.com/2017/09/08/proyectos/">
-                    <img src="img/challenges.png" alt=""></a>
-                    <div>and more</div>
-                </section>
-            </article>
-        </main>
-        
-    </body>
+        <p>
+          What got you me programming, you ask? Long story short, it was a mix
+          of curiosity, a will to build learning tools, thirst for knowledge and
+          a desire for new challenges.
+        </p>
+
+        <p>
+          Qu'est-ce qui m'a améné vers la programmation, tu demandes? Dans un
+          premier temps, quand je travaillais tant que formateur, j'avais envie
+          de développer mes idées pour des outils pour l'apprentissage de
+          langues, mais apprès ma curiosité insatiable pour les technologies et
+          un vrai goût pour le défi ont fait leur travail.
+        </p>
+
+        <p>
+          The project section in this page presents some of the things I am
+          working on. These are in no way finished up projects and I often come
+          back to them to polish things a little.
+        </p>
+
+        <p>
+          La rubrique "projets" sur cette page, montre quelques choses que j'ai
+          construit pour m'apprendre. Elles sont pas tous forcement finis, mais
+          j'ai appris beaucoup avec eux
+        </p>
+
+        <p>
+          En plus de coder,j'aime bien courir, enregistrer des sons, dessiner,
+          lire et écrire des comptes.
+        </p>
+      </article>
+
+      <article id="portfolio" class="aside isHidden">
+        <section class="project">
+          <a target="_blank" href="http://alaminos.github.io/perlimpinpin">
+            <img src="img/perlimpinpin.png" alt="a landing page"
+          /></a>
+
+          <div>a product landing page</div>
+        </section>
+        <section class="project">
+          <a
+            target="_blank"
+            href="http://alaminos.github.io/animal-guess-prototype"
+          >
+            <img src="img/agame.png" alt=""
+          /></a>
+
+          <div>a game prototype</div>
+        </section>
+        <section class="project">
+          <a
+            target="_blank"
+            href="https://alaminos.github.io/new-hex-converter/"
+          >
+            <img src="img/hex.png" alt=""
+          /></a>
+
+          <div>hexadecimal converter</div>
+        </section>
+        <section class="project">
+          <a target="_blank" href="https://alaminos.github.io/todo-list/">
+            <img src="img/todoapp.png" alt=""
+          /></a>
+
+          <div>just another to-do app</div>
+        </section>
+        <section class="project">
+          <a target="_blank" href="https://github.com/alaminos/watchasay">
+            <img src="img/watchasay.png" alt=""
+          /></a>
+
+          <div>a language learning app (in progress)</div>
+        </section>
+        <section class="project">
+          <a
+            target="_blank"
+            href="https://antidisciplinar.wordpress.com/2017/09/08/proyectos/"
+          >
+            <img src="img/challenges.png" alt=""
+          /></a>
+
+          <div>and more</div>
+        </section>
+      </article>
+    </main>
+  </body>
 </html>

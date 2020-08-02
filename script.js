@@ -1,4 +1,3 @@
-
 function isVisible(x) {
-    document.getElementById(x).classList.toggle('isVisible');
+  document.getElementById(x).classList.toggle("isVisible");
 }
